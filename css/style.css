@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Maven+Pro:wght@400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nosifer&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Maven+Pro:wght@400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nosifer&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+body
+{
+    background: var(--primary);
+    font-family: 'Maven Pro', sans-serif;
+}
+:root
+{
+     --primary : #edf2fc;
+    --secondary : #000;
+    --counts : #ff4321;
+    --back : #f5f6fa;
+}
+.dark-theme
+{
+    --primary : rgb(23, 23, 23);
+    --counts : darkblue;
+    --secondary : #ff4321;
+    --back : rgb(225, 229, 240);
+}
+.counter-head
+{
+    font-size: 67px;
+    color: var(--secondary);
+    font-family: 'Nosifer', cursive;
+}
+.counter-paragraph
+{
+    font-size: 44px;
+    color: var(--secondary);
+}
+.logo-social-media
+
+{
+    font-size: 100px;
+    line-height: 150px;
+}
+.fa-facebook
+{
+    padding: 15px;
+    color: #166FE5;
+}
+.fa-youtube
+{
+    padding: 15px;
+    color: #FF0000;
+}
+.fa-twitter
+{
+ 
+    padding: 15px;
+    color: #49A4ED;
+}
+.fa-instagram
+{
+
+    padding: 5px 6px;
+    width: 103px;
+    height: 108px;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    color: #fff;
+    border-radius: 30%;
+}
+.fa-whatsapp
+{
+ 
+    padding: 15px;
+    color: #11CE4D;
+}
+.fa-snapchat
+{
+    padding: 15px;
+    color: #FFFC00;
+}
+.fa-discord
+{
+    padding: 15px;
+    color: #4E62F0;
+}
+.fa-viber
+{
+    padding: 15px;
+    color: #794F99;
+}
+
+.counter 
+{
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--counts);
+    line-height: 65px;
+}
+.counter-box
+{
+    border: 1px solid #ccc;
+    height: 250px;
+    width: 250px;
+    background-color: var(--back);
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 1px 4px 2px 2px #dcdde1;
+}
+
+
+
+
+/* icon customization */
+#icon
+{
+    width: 40px;
+    cursor: pointer;
+    top: 40px; 
+}
+
+  /* mobile phones */
+  @media (max-width: 768px)
+  {
+    body
+    {
+      overflow-x: hidden;
+    }
+    .counter-box
+    {
+        margin-left:20px;
+    }
+    .head-block
+   {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+   }
+   #icon , .counter-head
+   {
+       margin-right: auto;
+   }
+   .counter-paragraph
+   {
+       text-align: justify;
+       font-size: 22px;
+   }
+}
